@@ -2,6 +2,10 @@
 
 Governance primitives for autonomous agents. Verify actions against policy, record provenance, and bind intents — all cryptographically signed.
 
+<a href="https://glama.ai/mcp/servers/@ndl-systems/kevros-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@ndl-systems/kevros-mcp/badge" alt="kevros-mcp MCP server" />
+</a>
+
 ## Quick Start
 
 Add to your MCP client configuration:
