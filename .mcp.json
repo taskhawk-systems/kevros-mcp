@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "kevros": {
+      "type": "streamableHttp",
+      "url": "https://governance.taskhawktech.com/mcp/",
+      "headers": {
+        "X-API-Key": "${KEVROS_API_KEY}"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "kevros",
+  "version": "0.3.6",
+  "description": "Governance primitives for autonomous agents — verify, attest, bind, verify-outcome, bundle",
+  "author": {
+    "name": "TaskHawk Systems",
+    "url": "https://taskhawktech.com"
+  },
+  "license": "BSL-1.1",
+  "transport": {
+    "type": "streamableHttp",
+    "url": "https://governance.taskhawktech.com/mcp/"
+  }
+}
