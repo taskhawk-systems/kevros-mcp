@@ -1,0 +1,47 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.taskhawk-systems/kevros",
+  "title": "Kevros",
+  "description": "Runtime intelligence for autonomous AI agents. Verify actions, record provenance, bind intents. ML-DSA-87 post-quantum signed attestations.",
+  "version": "0.3.10",
+  "websiteUrl": "https://taskhawktech.com",
+  "license": "BSL-1.1",
+  "repository": {
+    "url": "https://github.com/taskhawk-systems/kevros-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://governance.taskhawktech.com/mcp/",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Kevros API key (starts with kvrs_). Leave blank for free tier with 1,000 calls/month.",
+          "isSecret": true,
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "kevros",
+      "version": "0.3.10",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KEVROS_API_KEY",
+          "description": "Your Kevros API key (starts with kvrs_). Optional — auto-provisions free tier if not set.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
